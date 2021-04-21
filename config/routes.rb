@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :produtos, only: [:index]
+  resources :restaurantes
   devise_for :users
   root 'home#index'
   #get 'home/index'
