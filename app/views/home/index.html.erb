@@ -1,6 +1,13 @@
 <h1>Home#index</h1>
 <%puts '123' %>
 <p>Find me in app/views/home/index.html.erb</p>
-olha ai <% @email %>
+olha ai <%= @email %>
 
+
+<% if user_signed_in? %>
+    if user.restaurante? 
+      <p> Seus produtos, = current_user.restaurant.name </p>
+      fez porra de uma tabela de produtos, mas meu produto não ta funcionaneod
+   end 
+<% end %>
 

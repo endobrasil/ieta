@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-  	@email = user_signed_in? ? current_user.email : 'Stranger'  	
+  	@email = user_signed_in? ? current_user.email : 'Stranger'
+  	
 
   end
 end

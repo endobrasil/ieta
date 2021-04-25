@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'ordens/create'
   resources :produtos, only: [:index]
   resources :restaurantes
   devise_for :users
